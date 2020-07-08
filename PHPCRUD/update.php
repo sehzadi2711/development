@@ -71,10 +71,12 @@ function dbconnect(){
              $image = $row['image']; 
 
               // echo $image;
+
              ?>
+             <!-- <img src="uploads/<?php echo $image; ?>" width="50px" height="50px" > -->
              <form action="" method="post" enctype="multipart/form-data">
               <div align="center" class="rounded-circle">
-               <img class="rounded-circle mx-auto" src="uploads/<?php echo $image; ?>" width="50px" height="50px" >
+               <img src="<?php echo $image; ?>"  width="100px" height="100px">
               </div><br>
                <div class="input-group">
                 <div class="input-group-prepend">
